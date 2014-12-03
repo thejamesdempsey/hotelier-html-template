@@ -1,0 +1,10 @@
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #e8e8e8;
+}
+
+.navbar.navbar-fixed-top + #main {
+    margin-top: 60px;
+}

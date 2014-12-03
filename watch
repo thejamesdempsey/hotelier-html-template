@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sass --watch scss/screen.scss:stylesheets/screen.css

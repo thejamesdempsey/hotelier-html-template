@@ -1,0 +1,58 @@
+html{
+    background-color: #e8e8e8;
+}
+
+body{
+    background-color: transparent;
+}
+
+$panel-header-height: 44px;
+
+%panel-content{
+    padding: (1.25em / 2) 1.25em;
+}
+
+.panel{
+    padding: 0;
+    background-color: #fff;
+}
+
+    .panel__header{
+        @extend %panel-content;
+        background-color: #fafafa;
+        position: relative;
+        height: $panel-header-height;
+    }
+    
+        .panel__title{
+            margin: 0 !important;
+            display: inline-block;
+            font-size: 1.125em;
+        }
+
+    .panel__body{
+        @extend %panel-content;
+        border: 1px solid #e5e5e5;
+    }
+
+    .panel__footer{
+        @extend %panel-content;
+    }
+    
+    .panel-tabs{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .tab-title.active .tab-link{
+        border-top: 2px solid $primary-color;
+        line-height: $panel-header-height - 2;    
+        
+    }
+    
+    .tab-link{
+        padding: 0 1rem !important;    
+        height: $panel-header-height;
+        line-height: $panel-header-height;    
+    }

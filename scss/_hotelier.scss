@@ -1,0 +1,105 @@
+.main-content{
+    padding-top: 5em;
+}
+
+.site-header{
+    max-width: 100%;
+    
+    background-color: #fafafa;
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(top, white 1%, #f3f3f3 100%);
+    background-image: linear-gradient(to bottom, #ffffff 1%, #f3f3f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.site-title{
+    width: 184px;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+    height: $topbar-height;
+    line-height: $topbar-height;
+}
+
+.navigation{
+    margin-left: 0;
+}
+
+    .navigation--left{
+        float: left;
+        width: 201px;
+    }
+    
+    .navigation--right{
+        float: right;
+        width: 428px;
+    }
+
+.primary-actions{
+    float: left;
+}
+
+
+
+.user-menu{
+    float: right;
+}
+
+.nav__item{
+    display: inline-block;
+}
+
+.nav__link{
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    height: $topbar-height;
+    line-height: $topbar-height;
+    letter-spacing: .04em;
+    color: #3a3a3a;
+    padding: 0 18px;
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav__link.glyphicons{
+    font-size: 16px;
+    color: #666;
+    
+    &:hover{
+        color: #3a3a3a;
+    }
+}
+
+
+.site-brand{
+    font-size: 18px;
+}
+
+
+.nav-link.icon-humburger{
+    line-height: 1.4;
+    padding: 18px 24px;
+}
+
+.icon-hamburger{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    
+    &:before{
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0;
+        top: 50%;
+        margin-top: -0.5rem;
+        left: 0.90625rem;
+        box-shadow: 0 0px 0 1px #3a3a3a, 0 7px 0 1px #3a3a3a, 0 14px 0 1px #3a3a3a;
+        width: 1rem;
+    }
+}
+
